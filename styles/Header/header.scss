@@ -8,23 +8,47 @@ header{
     height: 8vh;
     margin-top: 20px;
     z-index: 2;
+    position: fixed;
 
     .nav-container{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 95%;
+        height: 100%;
         background-color: $bg-header-color;
         border-radius: 20px;
         box-shadow: 1px 1px 10px #00000081;
 
         h1{
             font-weight: 400;
-            font-size: 24px;
+            font-size: $title-header;
             color: $primary-color;
+            letter-spacing: 1px;
 
             span{
                 color: $secondary-color;
+            }
+        }
+
+        nav{
+            
+            ul{
+                display: flex;
+                gap: 24px;
+
+                li{
+                    list-style: none;
+
+                    a{
+                        color: $primary-color;
+                        font-size: $links-header;
+
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                }
             }
         }
     }

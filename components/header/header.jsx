@@ -1,10 +1,10 @@
-
+import styles from "../../styles/Header/header.scss";
 
 const Header = () => {
     return (
         <header>
             <div className="nav-container">
-            <h1><span>&lt;</span>Pedro Ferreira <span>&gt;</span></h1>
+            <h1><span> &lt;</span>Pedro Ferreira <span>&gt;</span></h1>
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>

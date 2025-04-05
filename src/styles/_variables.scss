@@ -11,6 +11,8 @@ $bg-header-color: #dedede;
 // FONT-SIZES CLAMP
 
 $title-header: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
-$links-header: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem)
+$links-header: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem);
+
+$title-hero: clamp(2rem, 1.8571rem + 0.7143vw, 2.5rem);
 
 

@@ -17,13 +17,13 @@ const Hero = () => {
         }, {
             opacity: 1,
             y: 0,
-            stagger: 1,
+            stagger: 0.7,
             duration: 1,
             delay: 1,
             ease: "power1.out"
         });
 
-        gsap.fromTo(".teste", {
+        gsap.fromTo(".letterdev", {
             opacity: 0,
             y: 30,
         }, {
@@ -31,7 +31,7 @@ const Hero = () => {
             y: 0,
             stagger: 0.1,
             duration: 1,
-            delay: 3,
+            delay: 2,
             ease: "power1.out",
             onComplete: () => {
                 gsap.fromTo(".bar", {
@@ -52,7 +52,18 @@ const Hero = () => {
             opacity: 1,
             y: 0,
             duration: 1,
-            delay: 5.4,
+            delay: 4,
+            ease: "power1.out",
+        });
+
+        gsap.fromTo(".icon", {
+            opacity: 0,
+            y: 30,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: 4,
             ease: "power1.out",
         });
 
@@ -60,52 +71,53 @@ const Hero = () => {
     })
 
     return (
-        <section id="home" className="section-main">
+        <section id="home" className="section-hero">
             <video playsInline autoPlay muted loop>
                 <source src="/media/banner.mp4" type="video/mp4" />
             </video>
-            <div className="container-main">
+            <div className="container-hero">
                 <div className="phrase1">
-                    <span className="letter">Olá Seja bem-vindo!</span>
+                    <h1 className="letter">Olá Seja bem-vindo!</h1>
                 </div>
                 <div className="phrase2">
-                    <span className="letter">Me chamo Pedro Ferreira</span>
+                    <h2 className="letter">Me chamo Pedro Ferreira</h2>
                 </div>
                 <div className="phrase3">
-                    <span id="colorSpan" className="teste">D</span>
-                    <span id="colorSpan" className="teste">e</span>
-                    <span id="colorSpan" className="teste">s</span>
-                    <span id="colorSpan" className="teste">e</span>
-                    <span id="colorSpan" className="teste">n</span>
-                    <span id="colorSpan" className="teste">v</span>
-                    <span id="colorSpan" className="teste">o</span>
-                    <span id="colorSpan" className="teste">l</span>
-                    <span id="colorSpan" className="teste">v</span>
-                    <span id="colorSpan" className="teste">e</span>
-                    <span id="colorSpan" className="teste">d</span>
-                    <span id="colorSpan" className="teste">o</span>
-                    <span id="colorSpan" className="teste">r</span>
-                    <span className="teste"> </span>
-                    <span id="colorSpan" className="teste">F</span>
-                    <span id="colorSpan" className="teste">r</span>
-                    <span id="colorSpan" className="teste">o</span>
-                    <span id="colorSpan" className="teste">n</span>
-                    <span id="colorSpan" className="teste">t</span>
-                    <span id="colorSpan" className="teste">-</span>
-                    <span id="colorSpan" className="teste">E</span>
-                    <span id="colorSpan" className="teste">n</span>
-                    <span id="colorSpan" className="teste">d</span>
-                    <span id="colorSpan" className="teste bar">|</span>
+                    <span id="colorSpan" className="letterdev">D</span>
+                    <span id="colorSpan" className="letterdev">e</span>
+                    <span id="colorSpan" className="letterdev">s</span>
+                    <span id="colorSpan" className="letterdev">e</span>
+                    <span id="colorSpan" className="letterdev">n</span>
+                    <span id="colorSpan" className="letterdev">v</span>
+                    <span id="colorSpan" className="letterdev">o</span>
+                    <span id="colorSpan" className="letterdev">l</span>
+                    <span id="colorSpan" className="letterdev">v</span>
+                    <span id="colorSpan" className="letterdev">e</span>
+                    <span id="colorSpan" className="letterdev">d</span>
+                    <span id="colorSpan" className="letterdev">o</span>
+                    <span id="colorSpan" className="letterdev">r</span>
+                    <span className="letterdev"> </span>
+                    <span id="colorSpan" className="letterdev">F</span>
+                    <span id="colorSpan" className="letterdev">r</span>
+                    <span id="colorSpan" className="letterdev">o</span>
+                    <span id="colorSpan" className="letterdev">n</span>
+                    <span id="colorSpan" className="letterdev">t</span>
+                    <span id="colorSpan" className="letterdev">-</span>
+                    <span id="colorSpan" className="letterdev">E</span>
+                    <span id="colorSpan" className="letterdev">n</span>
+                    <span id="colorSpan" className="letterdev">d</span>
+                    <span id="colorSpan" className="letterdev bar">|</span>
                 </div>
-        <br />
+                <br />
                 <div className="phrase4">
                     <p className="info">Transformando ideias em experiências digitais 📱</p>
                 </div>
-
+                <br />
                 <div className="container-social-icons">
-                    {/* <a href="#"><img src="#" /></a>
-                    <a href="#"><img src="#" alt="Ícone do GitHub com link para acesso à página" /></a>
-                    <a href="#"><img src="#" alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a> */}
+                    <a className="icon" href="#"><img src="/icons/linkedin.svg" alt="Ícone do LinkedIn com link para acesso à página" /></a>
+                    <a className="icon" href="#"><img src="/icons/github.svg" alt="Ícone do GitHub com link para acesso à página" /></a>
+                    <a className="icon" href="#"><img src="/icons/cv.svg" alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a>
+                    <a className="icon" href="#"><img src="/icons/whatsapp.svg" alt="Ícone de contato para whatsapp" /></a>
                 </div>
             </div>
         </section>

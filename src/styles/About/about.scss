@@ -1,0 +1,62 @@
+@import "../variables";
+
+.section-about {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+    .container-about{
+        // position: relative;
+        opacity: 0;
+        height: auto;
+        min-height: 60vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 20px;
+        background-color: $bg-secondary-color;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+        img{
+            // position: absolute;
+            width: auto;
+            height: 60vh;
+            
+            border-bottom-left-radius: 20px;
+        }
+
+        .aboutme-info{
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            p{
+                line-height: 1.5;
+                letter-spacing: 1px;
+
+                &:nth-child(1){
+                    color: $primary-color;
+                    font-weight: 500;
+                    font-size: $font-size-text;
+                }
+
+                &:nth-child(2){
+                    letter-spacing: 0px;
+                    margin-top: 20px;
+                    color: $secondary-color;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: $font-size-secondary-text;
+                }
+            }
+        }
+    }
+}

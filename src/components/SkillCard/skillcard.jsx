@@ -1,24 +1,112 @@
+"use client";
+
 import Image from "next/image";
 import style from "../../styles/SkillCard/SkillCard.scss";
+import { useState } from "react";
+import gsap from "gsap";
 
+const SkillCard = ({ image, title, description, key }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
 
+    const handleCardClick = () => {
+        setIsExpanded(true);
+        setTimeout(() => {
+            document.querySelector(".expanded-card")?.classList.add("entering");
+            gsap.fromTo(
+                ".expanded-card.entering",
+                {
+                    scale: 0.3,
+                    opacity: 0,
+                },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.6,
+                }
+            );
+        }, 0);
+    };
 
-const SkillCard = ({image, title, description, key}) => {
-
-
-
+    const handleCloseClick = () => {
+        document.querySelector(".expanded-card")?.classList.remove("entering");
+        setIsExpanded(false);
+    };
 
     return (
-        <div className="card" id={key}>
-            <Image className="card-image" src={image} alt={description} title={title} width={50} height={50}/>
-            <div className="content-card">
-              <p className="card-title">{title}</p>
-              <p className="card-description">{description}</p>  
+        <>
+            {isExpanded ? <div className="blur" /> : null}
+            <div onClick={handleCardClick} className="card" id={key}>
+                <Image
+                    className="card-image"
+                    src={image}
+                    alt={description}
+                    title={title}
+                />
             </div>
-        </div>
-    )
-
-}
-
+            {isExpanded ? (
+                <div className="expanded-card">
+                    <button className="expanded-card-btn" onClick={handleCloseClick}>X</button>
+                    <Image
+                        className="expanded-card-image"
+                        src={image}
+                        alt={description}
+                        title={title}
+                    />
+                    <p className="expanded-card-title">{title}</p>
+                    <p className="expanded-card-description">{description}</p>
+                </div>
+            ) : null}
+        </>
+    );
+};
 
 export default SkillCard;
+
+
+// "use client";
+
+// import Image from "next/image";
+// import style from "../../styles/SkillCard/SkillCard.scss";
+// import { useState } from "react";
+// import gsap from "gsap"
+
+// const SkillCard = ({ image, title, description, key }) => {
+//   const [isExpanded, setIsExpanded] = useState(false);
+
+//   const handleCardClick = () => {
+//     setIsExpanded(true);
+//   };
+
+//   const handleCloseClick = () => {
+//     setIsExpanded(false);
+//   };
+
+//   return (
+//     <>
+//       {isExpanded ? <div className="blur" /> : null }
+//       <div onClick={handleCardClick} className="card" id={key}>
+//         <Image
+//           className="card-image"
+//           src={image}
+//           alt={description}
+//           title={title}
+//         />
+//       </div>
+//       {isExpanded ? (
+//         <div className="expanded-card">
+//           <button onClick={handleCloseClick}>Fechar</button>
+//           <Image
+//             className="expanded-card-image"
+//             src={image}
+//             alt={description}
+//             title={title}
+//           />
+//           <p className="expanded-card-title">{title}</p>
+//           <p className="expanded-card-description">{description}</p>
+//         </div>
+//       ): null }
+//     </>
+//   );
+// };
+
+// export default SkillCard;

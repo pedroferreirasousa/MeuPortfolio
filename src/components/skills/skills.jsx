@@ -13,6 +13,8 @@ import gsap from "../../../public/media/icons/gsap.svg";
 import tailwindcss from "../../../public/media/icons/tailwind.svg";
 import sass from "../../../public/media/icons/sass.svg";
 import git from "../../../public/media/icons/git.svg";
+import styledcomponents from "../../../public/media/icons/styledcomponents.svg"
+import figma from "../../../public/media/icons/figma.svg"
 
 
 
@@ -72,6 +74,16 @@ const Skills = () => {
     {
         name: "Sass",
         image: sass,
+        description: "lorem ipsum",
+    },
+    {
+        name: "Styled Components",
+        image: styledcomponents,
+        description: "lorem ipsum",
+    },
+    {
+        name: "Figma",
+        image: figma,
         description: "lorem ipsum",
     },
     {

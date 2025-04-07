@@ -11,6 +11,13 @@ html{
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+
+    body{
+        width: 100%;
+    }
 
     ul{
         list-style: none;

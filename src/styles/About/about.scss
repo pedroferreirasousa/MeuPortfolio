@@ -5,12 +5,18 @@
     height: 100vh;
     background-color: $bg-primary-color;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
 
+    h1{
+        color: $secondary-color;
+    }
+
     .container-about{
         // position: relative;
+        margin-top: 48px;
         opacity: 0;
         height: auto;
         min-height: 60vh;

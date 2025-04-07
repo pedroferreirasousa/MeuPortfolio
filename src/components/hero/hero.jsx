@@ -4,6 +4,11 @@ import styles from "../../styles/Hero/hero.scss";
 // import animateLetters from "../../animations/animatedHero";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
+import linkedin from "../../../public/media/icons/linkedin.svg";
+import github from "../../../public/media/icons/github.svg";
+import cv from "../../../public/media/icons/cv.svg";
+import whatsapp from "../../../public/media/icons/whatsapp.svg";
 
 const Hero = () => {
 
@@ -114,10 +119,10 @@ const Hero = () => {
                 </div>
                 <br />
                 <div className="container-social-icons">
-                    <a className="icon" href="#"><img src="/icons/linkedin.svg" alt="Ícone do LinkedIn com link para acesso à página" /></a>
-                    <a className="icon" href="#"><img src="/icons/github.svg" alt="Ícone do GitHub com link para acesso à página" /></a>
-                    <a className="icon" href="#"><img src="/icons/cv.svg" alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a>
-                    <a className="icon" href="#"><img src="/icons/whatsapp.svg" alt="Ícone de contato para whatsapp" /></a>
+                    <a className="icon" href="#"><Image src={linkedin} alt="Ícone do LinkedIn com link para acesso à página" /></a>
+                    <a className="icon" href="#"><Image src={github} alt="Ícone do GitHub com link para acesso à página" /></a>
+                    <a className="icon" href="#"><Image src={cv} alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a>
+                    <a className="icon" href="#"><Image src={whatsapp} alt="Ícone de contato para whatsapp" /></a>
                 </div>
             </div>
         </section>

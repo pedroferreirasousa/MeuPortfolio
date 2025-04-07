@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState, useRef } from "react";
+import Image from "next/image";
+import profile from "../../../public/media/Profile.png";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -72,8 +74,9 @@ const About = () => {
 
   return (
     <section id="about" className="section-about">
+      <h1>Conheça um pouco mais sobre mim</h1>
       <div className="container-about">
-        <img src="/media/profile.png" alt="Foto de perfil" />
+        <Image src={profile} alt="Foto de perfil" />
         <div className="aboutme-info">
           <p className="p">
             Natural de Uberlândia, Minas Gerais, e desde criança sou apaixonado

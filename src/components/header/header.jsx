@@ -9,7 +9,7 @@ const Header = () => {
                 <ul>
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#">Projetos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>

@@ -1,57 +1,69 @@
 @import "../variables";
 
-header{
-    width: 100vw;
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  margin-top: 20px;
+  z-index: 2;
+  position: fixed;
+
+  .nav-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 8vh;
-    margin-top: 20px;
-    z-index: 2;
-    position: fixed;
+    justify-content: space-around;
+    width: 95%;
+    height: 100%;
+    background-color: #1a2228;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #00000081;
 
-    .nav-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 95%;
-        height: 100%;
-        background-color: $bg-header-color;
-        border-radius: 20px;
-        box-shadow: 1px 1px 10px #00000081;
+    h1 {
+      font-weight: 400;
+      font-size: $title-header;
+      color: #f2f2f2;
+      letter-spacing: 1px;
 
-        h1{
-            font-weight: 400;
-            font-size: $title-header;
-            color: $primary-color;
-            letter-spacing: 1px;
-
-            span{
-                color: $secondary-color;
-            }
-        }
-
-        nav{
-            
-            ul{
-                display: flex;
-                gap: 24px;
-
-                li{
-                    list-style: none;
-
-                    a{
-                        color: $primary-color;
-                        font-size: $links-header;
-
-                        &:hover{
-                            color: $secondary-color;
-                        }
-                    }
-                }
-            }
-        }
+      span {
+        color: $secondary-color;
+      }
     }
+
+    .desktop-nav {
+      ul {
+        display: flex;
+        gap: 24px;
+
+        li {
+          list-style: none;
+
+          a {
+            color: #f2f2f2;
+            font-size: $links-header;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      .desktop-nav {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    .nav-container {
+        justify-content: space-around;
+    }
+    .nav { 
+      display: none;
+    }
+  }
 }
-
-

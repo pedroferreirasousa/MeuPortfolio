@@ -22,7 +22,7 @@ const About = () => {
     if (!animationPlayed) {
       scrollTriggerRef.current = ScrollTrigger.create({
         trigger: "#about",
-        start: "70% 80%",
+        start: "20% 80%",
         end: "bottom center",
         markers: true,
         onEnter: () => {

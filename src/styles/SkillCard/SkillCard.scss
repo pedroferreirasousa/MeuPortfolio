@@ -2,20 +2,22 @@
 
 .card {
     position: relative;
-    width: 200px;
-    min-width: 200px;
-    height: 200px;
-    background-color: $bg-card-color;
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    // background-color: $bg-card-color;
+    background-color: #1a2228;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: 2px solid #03030365;
+    box-shadow: 0px 0px 16px 2px $secondary-color;
 
     &-image {
         width: auto;
-        height: 96px;
+        height: 50px;
         transition: all 0.8 cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
@@ -23,6 +25,7 @@
         transform: scale(1.05);
         box-shadow: 0px 0px 16px $secondary-color;
         border: none 3px;
+        background-color: #f2f2f2;
     }
 }
 
@@ -31,7 +34,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: $bg-card-color;
+    // background-color: $bg-card-color;
+    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -84,7 +88,8 @@
         padding: 20px;
         font-size: $font-size-secondary-text;
         color: $primary-color;
-        line-height: 1.4;
+        line-height: 1.5;
+        font-weight: 500;
     }
 }
 

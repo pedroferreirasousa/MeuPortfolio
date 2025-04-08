@@ -1,0 +1,78 @@
+@import "../variables";
+
+.nav {
+  display: none;
+  z-index: 3;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 4;
+
+    div {
+      height: 3px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.open div:nth-child(1) {
+      transform: translateY(11px) rotate(45deg);
+      background-color: $secondary-color;
+    }
+
+    &.open div:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open div:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg);
+      background-color: $secondary-color;
+    }
+  }
+
+  .menulist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a2228;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      color: #f2f2f2;
+      font-size: $links-header;
+      text-decoration: none;
+      width: 100%;
+      height: 10vh;
+
+      &:hover {
+        color: #f2f2f2;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
-import Hero from "../hero/hero";
-import About from "../about/about";
-import Skills from "../skills/skills";
+import Hero from "../Hero/hero";
+import About from "../About/about";
+import Skills from "../Skills/skills";
+import Projects from "../Projects/project";
+import Contact from "../Contact/contact";
 
 const Main = () => {
     return (
@@ -8,6 +10,8 @@ const Main = () => {
         <Hero/>
         <About/>
         <Skills/>
+        <Projects/>
+        <Contact/>
         </>
     )
 }

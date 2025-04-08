@@ -1,29 +1,29 @@
-@import "../../styles/variables.scss";
+@import "../variables";
 
-.section-skills {
+
+
+.section-projects {
     height: auto;
-    min-height: 50vh;
+    min-height: 100vh;
     width: 100%;
-    // background-color: $bg-secondary-color;
+    // background-color: $bg-primary-color;
     background-color: #000325c7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 
     h1{
-        padding: 24px 0px;
-        font-size: $title-hero;
         color: $secondary-color;
+        font-size: $title-hero;
     }
 
-
-
-    .skills-container{
+    .container-projects{
+        width: 100%;
         max-width: 1200px;
-        width: auto;
         height: auto;
-        padding: 24px 0px ;
+        padding: 48px 0px ;
         display: flex;
         flex-wrap: wrap;
         overflow-x: auto;

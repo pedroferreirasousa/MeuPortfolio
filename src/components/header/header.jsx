@@ -1,5 +1,5 @@
 import styles from "../../styles/Header/header.scss";
-import MobileMenu from "../MobileMenu/mobilemenu";
+import MobileMenu from "../MobileMenu/Mobilemenu";
 
 const Header = () => {
     return (

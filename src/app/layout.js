@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from '../components/Header/header'
+import Header from '../components/Header/Header'
 import style from "../styles/reset.scss";
 
 

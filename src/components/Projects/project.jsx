@@ -1,7 +1,7 @@
 "use client";
 
 import style from "../../styles/Projects/projects.scss";
-import ProjectComponent from "./ProjectCard/projectCard";
+import ProjectComponent from "./ProjectCard/Projectcard";
 import atlasMercantil from "../../../public/media/AtlasMercantil.png";
 
 

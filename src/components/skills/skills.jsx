@@ -1,5 +1,5 @@
 
-import SkillCard from "../SkillCard/skillcard";
+import SkillCard from "../SkillCard/Skillcard";
 import style from "../../styles/Skills/skills.scss";
 import html from "../../../public/media/icons/html.svg";
 import css from "../../../public/media/icons/css.svg";

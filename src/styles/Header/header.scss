@@ -13,17 +13,18 @@ header {
   .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 32px;
     width: 95%;
     height: 100%;
-    background-color: #1a2228;
+    background-color: $obsidian-color;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #00000081;
 
     h1 {
       font-weight: 400;
       font-size: $title-header;
-      color: #f2f2f2;
+      color: $primary-color;
       letter-spacing: 1px;
 
       span {
@@ -40,7 +41,7 @@ header {
           list-style: none;
 
           a {
-            color: #f2f2f2;
+            color: $primary-color;
             font-size: $links-header;
 
             &:hover {
@@ -51,19 +52,19 @@ header {
       }
     }
 
-    @media (max-width: $breakpoint-mobile) {
-      .desktop-nav {
-        display: none;
-      }
-    }
   }
+}
+@media (max-width: $breakpoint-menu-mobile) {
+  .desktop-nav {
+    display: none;
+  }
+}
 
-  @media (min-width: $breakpoint-mobile) {
-    .nav-container {
-        justify-content: space-around;
-    }
-    .nav { 
-      display: none;
-    }
+@media (min-width: $breakpoint-menu-mobile) {
+  .nav-container {
+      justify-content: space-around;
+  }
+  .nav { 
+    display: none;
   }
 }

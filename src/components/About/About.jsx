@@ -11,7 +11,7 @@ import profile from "../../../public/media/Profile.png";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 if (typeof window !== "undefined") {
-  ScrollTrigger.defaults({ markers: true });
+  ScrollTrigger.defaults({ markers: false });
 }
 
 const About = () => {
@@ -24,7 +24,7 @@ const About = () => {
         trigger: "#about",
         start: "20% 80%",
         end: "bottom center",
-        markers: true,
+        markers: false,
         onEnter: () => {
           gsap.fromTo(
             ".container-about",

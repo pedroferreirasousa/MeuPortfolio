@@ -5,8 +5,7 @@
     width: 100px;
     min-width: 100px;
     height: 100px;
-    // background-color: $bg-card-color;
-    background-color: #1a2228;
+    background-color: $obsidian-color;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@
         transform: scale(1.05);
         box-shadow: 0px 0px 16px $secondary-color;
         border: none 3px;
-        background-color: #f2f2f2;
+        background-color: $primary-color;
     }
 }
 
@@ -34,8 +33,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // background-color: $bg-card-color;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -102,4 +100,20 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     z-index: 9;
+}
+
+
+// media queries
+
+@media (max-width: $breakpoint-mobile) {
+    .card {
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+
+        &-image {
+            width: 48px;
+            height: 48px;
+        }
+    }
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "../../styles/Hero/hero.scss";
-// import animateLetters from "../../animations/animatedHero";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
@@ -25,7 +24,7 @@ const Hero = () => {
             stagger: 0.7,
             duration: 1,
             delay: 1,
-            ease: "power1.out"
+            ease: "power1.out",
         });
 
         gsap.fromTo(".letterdev", {

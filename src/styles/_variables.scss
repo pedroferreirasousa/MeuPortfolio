@@ -1,9 +1,13 @@
 
-//CORES PRINCIPAIS DE TEXTO
-$primary-color: #111111;
+//Colors
+$primary-color: #f6f6f7;
 $secondary-color: #086cca;
+$dark-blue-color: #000325c7;
+$dark-blue-color-without-opacity: #000325;
+$obsidian-color: #1a2228;
 
-//CORES DE BACKGROUND
+
+//Background colors
 $bg-primary-color: #d1cfcf;
 $bg-secondary-color: #c0bfbf;
 $bg-header-color: #dedede;
@@ -14,13 +18,20 @@ $bg-card-color: #dee0e2;
 $title-header: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
 $links-header: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem);
 
-$title-hero: clamp(2rem, 1.8571rem + 0.7143vw, 2.5rem);
+$title-hero: clamp(1.75rem, 1.2266rem + 1.9704vw, 3rem);
 
 $font-size-text: clamp(1.125rem, 1.0536rem + 0.3571vw, 1.375rem);
 $font-size-secondary-text: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
 
 //BREAKPOINTS- MOBILE
 
-$breakpoint-mobile: 950px;
+$breakpoint-menu-mobile: 850px;
+
+$breakpoint-title-hero: 610px;
+
+$breakpoint-mobile: 425px;
+
+$breakpoint-mobile-small: 346px;
+
 
 

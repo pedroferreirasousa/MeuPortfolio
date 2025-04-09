@@ -24,8 +24,6 @@
     }
 
     &:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 8px 16px $secondary-color;
 
         .project-image {
             scale: 0;
@@ -42,7 +40,6 @@
         height: 100%;
         padding: 20px;
         box-sizing: border-box;
-        // background-color: $bg-primary-color;
         background-color: $primary-color;
         transform: rotateX(-90deg);
         transform-origin: bottom;
@@ -60,7 +57,7 @@
             margin: 10px 0 10px;
             font-size: 14px;
             line-height: 1.4;
-            color: $primary-color;
+            color: $obsidian-color;
             // color: #f2f2f2;
         }
         
@@ -79,18 +76,16 @@
 
             &:hover {
                 scale: 0.95;
-                background-color: $bg-secondary-color;
+                background-color: $obsidian-color;
                 color: $secondary-color;
                 box-shadow: 0px 0px 10px #0c0c0cb4;
-                color: $secondary-color;
             }
         }
         
         .secondary{
             position: absolute;
-            background: transparent;
+            background-color: $obsidian-color;
             color: $primary-color;
-            border: 1px solid $secondary-color;
             bottom: 8px;
             left: 110px;
         }

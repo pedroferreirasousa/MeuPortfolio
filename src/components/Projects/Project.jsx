@@ -12,8 +12,9 @@ const Projects = () => {
         name: "AtlasMercantil",
         image: atlasMercantil,
         description: "description",
-        url: "url"
-    }, {
+        url: "https://pedroferreirasousa.github.io/AtlasMercantil-2.0/",
+        urlcode: "https://github.com/pedroferreirasousa/AtlasMercantil-2.0"
+    },{
         name: "AtlasMercantil",
         image: atlasMercantil,
         description: "description",
@@ -53,6 +54,7 @@ const Projects = () => {
                         image={cards.image}
                         description={cards.description}
                         url={cards.url}
+                        urlcode={cards.urlcode}
                         key={index}
                     />
                 ))}

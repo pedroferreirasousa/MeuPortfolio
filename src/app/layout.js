@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from '../components/Header/Header'
 import style from "../styles/reset.scss";
 import Head from "next/head";
+import Footer from "../components/Footer/footer";
 
 
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

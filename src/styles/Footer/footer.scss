@@ -1,0 +1,18 @@
+@import "../variables";
+
+footer {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue-color;
+    color: $primary-color;
+    font-size: $font-size-secondary-text;
+    padding: 24px 0px;
+    
+    p{
+        width: 100vw;
+        text-align: center;
+    }
+}

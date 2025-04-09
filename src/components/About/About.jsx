@@ -75,7 +75,7 @@ const About = () => {
   return (
     <section id="about" className="section-about">
       <div className="content">
-        <h1>Conheça um pouco mais sobre mim</h1>
+        <h1>Sobre mim</h1>
         <div className="container-about">
           <div className="profile-image-container">
             <Image src={profile} alt="Foto de perfil" fill style={{ objectFit: 'cover' }} />

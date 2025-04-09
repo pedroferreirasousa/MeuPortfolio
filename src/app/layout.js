@@ -12,7 +12,7 @@ export const metadata = {
   appleMobileWebAppStatusBarStyle: "black-translucent",
 };
 
-const shareImageUrl = "/media/portfolio-share.png";
+const shareImageUrl = "../../public/media/share-image.png";
 
 export default function RootLayout({ children }) {
   return (
@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content={shareImageUrl} />
         <meta property="og:url" content="https://pedroferreirasousa.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={shareImageUrl} />
       </Head>
       <body>
         <Header/>

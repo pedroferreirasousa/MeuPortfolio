@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content={shareImageUrl} />
         <meta property="og:url" content="https://pedroferreirasousa.vercel.app/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={shareImageUrl} />
       </Head>
       <body>
         <Header/>

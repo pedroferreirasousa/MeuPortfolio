@@ -12,7 +12,8 @@ export const metadata = {
   appleMobileWebAppStatusBarStyle: "black-translucent",
 };
 
-const shareImageUrl = "../../public/media/share-image.png";
+const baseURL = "https://pedroferreirasousa.vercel.app/";
+const shareImageUrl = `${baseUrl}/media/share-image.png`
 
 export default function RootLayout({ children }) {
   return (

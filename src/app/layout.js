@@ -7,7 +7,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Pedro Ferreira Sousa",
-  description: "Portfólio de Pedro Ferreira Sousa, desenvolvedor Front End focado em criar soluções inovadoras com React, Next.js e Typescript.",
+  description: "Portfólio de Pedro Ferreira Sousa, desenvolvedor Front End focado em criar soluções inovadoras com React, Next.js, Javascript e Typescript.",
   themeColor: "#000325",
   appleMobileWebAppStatusBarStyle: "black-translucent",
   robots: {
@@ -16,7 +16,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Pedro Ferreira Sousa",
-    description: "Portfólio de Pedro Ferreira Sousa, desenvolvedor Front End focado em criar soluções inovadoras com React, Next.js e Typescript.",
+    description: "Portfólio de Pedro Ferreira Sousa, desenvolvedor Front End focado em criar soluções inovadoras com React, Next.js, Javascript e Typescript.",
     url: "https://pedroferreirasousa.vercel.app/",
     type: "website",
     images: [

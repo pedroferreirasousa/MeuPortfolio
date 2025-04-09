@@ -1,8 +1,10 @@
 @import "../variables";
 
 .section-about {
+    padding-top: 8vh;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: $dark-blue-color;
     display: flex;
     flex-direction: column;
@@ -10,56 +12,88 @@
     justify-content: center;
     overflow-y: hidden;
 
-    h1{
-        color: $secondary-color;
-        font-size: $title-hero;
-    }
-
-    .container-about{
-        margin-top: 48px;
-        opacity: 0;
-        height: auto;
-        min-height: 60%;
-        max-width: 1200px;
-        width: 70%;
+    .content {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        border-radius: 20px;
-        background-color: $obsidian-color;
-        border-radius: 20px;
+        justify-content: space-around;
+        flex-direction: column;
 
-        img{
-            width: auto;
-            height: 60vh;           
-            border-bottom-left-radius: 20px;
+
+
+        h1 {
+            color: $secondary-color;
+            font-size: $title-hero;
+            padding: 56px 0px;
         }
 
-        .aboutme-info{
-            width: 50vw;
+        .container-about {
+            opacity: 0;
+            height: auto;
+            min-height: 50%;
+            max-width: 1200px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 20px;
+            background-color: $obsidian-color;
+            padding: 3rem 2rem 2rem 2rem;
+            box-shadow: 0px 0px 15px 2px $secondary-color;
+            position: relative;
+            margin-top: 72px;
+            margin-bottom: 70px;
+
+            .profile-image-container {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: clamp(8rem, 6.9167rem + 4.8148vw, 11.25rem);
+                height: auto;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 5px solid $secondary-color;
+                z-index: 10;
+                box-shadow: 0px 0px 10px $secondary-color;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        .aboutme-info {
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
-
-            p{
-                line-height: 1.5;
+            p {
+                line-height: 1.3;
                 letter-spacing: 1px;
+                color: $secondary-color;
+                margin-bottom: 1rem;
 
-                &:nth-child(1){
-                    // color: $primary-color;
+                &:nth-child(1) {
                     color: $primary-color;
                     font-weight: 500;
-                    font-size: $font-size-text;
+                    font-size: $font-size-about;
+                    padding-top: 50px;
                 }
 
-                &:nth-child(2){
+                &:nth-child(2) {
                     letter-spacing: 0px;
-                    margin-top: 20px;
-                    color: $secondary-color;
+                    margin-top: 1rem;
                     text-align: center;
                     font-weight: 600;
-                    font-size: $font-size-secondary-text;
+                    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
                 }
             }
         }

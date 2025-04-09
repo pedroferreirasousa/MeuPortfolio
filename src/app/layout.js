@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from '../components/Header/Header'
 import style from "../styles/reset.scss";
 import Head from "next/head";
-import Footer from "../components/Footer/footer";
+import Footer from "../components/Footer/Footer";
 
 
 

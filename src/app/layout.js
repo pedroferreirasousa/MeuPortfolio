@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const baseURL = "https://pedroferreirasousa.vercel.app/";
-const shareImageUrl = `${baseUrl}/media/share-image.png`
+const shareImageUrl = `${baseURL}/media/share-image.png`
 
 export default function RootLayout({ children }) {
   return (

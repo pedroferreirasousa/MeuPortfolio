@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
       <Head>
         <meta name="theme-color" content={metadata.themeColor} />
         <meta name="apple-mobile-web-app-status-bar-style" content={metadata.appleMobileWebAppStatusBarStyle} />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       </Head>
       <body>
         <Header/>

@@ -10,10 +10,13 @@ export const metadata = {
   title: "Pedro Ferreira Sousa",
   description: "Portfólio de Pedro Ferreira Sousa, desenvolvedor Front End focado em criar soluções inovadoras com React, Next.js, Javascript e Typescript.",
   themeColor: "#000325",
-  appleMobileWebAppStatusBarStyle: "black-translucent",
-  robots: {
-    index: true,
-    follow: true,
+  appleWebApp: {
+    statusBarStyle: "black-translucent",
+    capable: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Pedro Ferreira Sousa",
@@ -30,8 +33,12 @@ export const metadata = {
     ],
     locale: "pt-br",
     site_name: "Pedro Ferreira Sousa",
-  }
-
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  
 };
 
 const baseURL = "https://pedroferreirasousa.vercel.app";
@@ -43,7 +50,6 @@ export default function RootLayout({ children }) {
       <Head>
         <meta name="theme-color" content={metadata.themeColor} />
         <meta name="apple-mobile-web-app-status-bar-style" content={metadata.appleMobileWebAppStatusBarStyle} />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       </Head>
       <body>
         <Header/>

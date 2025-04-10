@@ -15,7 +15,6 @@ export const metadata = {
     capable: true,
   },
   icons: {
-    icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
@@ -51,6 +50,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content={metadata.themeColor} />
         <meta name="apple-mobile-web-app-status-bar-style" content={metadata.appleWebApp?.statusBarStyle} />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Header/>

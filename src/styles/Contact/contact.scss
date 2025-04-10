@@ -51,6 +51,7 @@
         align-items: center;
         justify-content: center;
         gap: 24px;
+        padding-bottom: 48px;
 
         .container-right {
             display: flex;
@@ -144,7 +145,6 @@
             width: 300px;
             max-width: 300px;
             margin: 0 auto;
-            border: 1px solid $secondary-color;
 
             img {
                 width: 100%;

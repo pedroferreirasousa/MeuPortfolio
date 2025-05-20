@@ -67,25 +67,30 @@
     }
 
     .expanded-card-image {
-        position: absolute;
-        top: 20px;
+        position: relative;
+        // top: 20px;
         width: 100px;
         height: 100px;
     }
 
     .expanded-card-title {
-        position: absolute;
-        top: 150px;
+        position: relative;
+        top: 16px;
         font-size: $font-size-text;
         font-weight: 700;
         color: $secondary-color;
     }
 
     .expanded-card-description {
+        height: 100%;
         width: 100%;
-        padding: 20px;
-        font-size: $font-size-secondary-text;
-        color: $primary-color;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        font-size: $font-size-text;
+        color: $dark-blue-color;
         line-height: 1.5;
         font-weight: 500;
     }

@@ -39,7 +39,12 @@ const Skills = () => {
     {
         name: "Typescript",
         image: typescript,
-        description: "lorem ipsum",
+        description: "Typescript é uma linguagem de programação de código aberto que permite criar aplicativos de alto desempenho e escalabilidade.",
+    },
+    {
+        name: "Next.js",
+        image: next,
+        description: "Next.js é uma plataforma de desenvolvimento de aplicativos Web com foco em desenvolvimento rápido, produtividade e produtos altamente escaláveis. ",
     },
     {
         name: "React",
@@ -47,51 +52,40 @@ const Skills = () => {
         description: "React é uma biblioteca JavaScript para criar interfaces de usuário em páginas Web. É uma biblioteca de código aberto que permite criar componentes reutilizáveis e renderizar a interface de usuário de forma eficiente.",
     },
     {
-        name: "Next.js",
-        image: next,
-        description: "Next.js é uma plataforma de desenvolvimento de aplicativos Web com foco em desenvolvimento rápido, produtividade e produtos altamente escaláveis. É uma plataforma de desenvolvimento de aplicativos Web que permite criar aplicativos de alto desempenho e escalabilidade.",
-    },
-    {
-        name: "Angular",
-        image: angular,
-        description: "lorem ipsum",
-    },
-    {
         name: "Vite",
         image: vite,
-        description: "Vite é uma ferramenta de desenvolvimento de aplicativos Web que permite criar aplicativos de alto desempenho e escalabilidade. É uma ferramenta de desenvolvimento de aplicativos Web que permite criar aplicativos de alto desempenho e escalabilidade.",
+        description: "Vite é uma ferramenta de desenvolvimento de aplicativos Web que permite criar aplicativos de alto desempenho e escalabilidade.",
     },
     {
         name: "GSAP",
         image: gsap,
-        description: "lorem ipsum",
+        description: "GSAP é uma biblioteca de animação de código aberto para a web. Permite criar animações e transições de páginas Web de forma fácil e eficiente.",
     },
     {
         name: "TailwindCSS",
         image: tailwindcss,
-        description: "lorem ipsum",
+        description: "TailwindCSS é uma biblioteca de estilos CSS que permite criar interfaces de usuário de forma rápida e fácil.",
     },
     {
         name: "Sass",
         image: sass,
-        description: "lorem ipsum",
+        description: "Sass é uma linguagem de estilo de código aberto que permite criar estilos CSS de forma fácil e eficiente. ",
     },
     {
         name: "Styled Components",
         image: styledcomponents,
-        description: "lorem ipsum",
+        description: "Styled Components é uma biblioteca de estilos CSS que permite criar estilos CSS de forma fácil e eficiente. ",
     },
     {
         name: "Figma",
         image: figma,
-        description: "lorem ipsum",
+        description: "Figma é uma ferramenta de design que permite criar interfaces de usuário de forma rápida e fácil. ",
     },
     {
         name: "Git",
         image: git,
-        description: "lorem ipsum",
+        description: "Git é uma ferramenta de controle de versão que permite gerenciar e compartilhar arquivos e versões de código. ",
     },
-
 
     ]
 

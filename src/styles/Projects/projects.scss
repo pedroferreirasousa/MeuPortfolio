@@ -30,5 +30,22 @@
         justify-content: center;
         align-items: center;
         gap: 24px;
+
+      }
+      .linkGit{
+        margin-top: 24px;
+          color: $secondary-color;
+          font-size: $font-size-text;
+          font-weight: 700;
+          padding: 16px 24px;
+          border: 1px solid $secondary-color;
+          background-color: #0000003b;
+          border-radius: 16px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover{
+              background-color: #ffffff91;
+              scale: 0.95;
+          }
     }
 }

@@ -19,7 +19,7 @@ const Projects = () => {
     name: "Studia",
     image: Studia,
     description: "WebAplicativo de uma platforma para gerenciamento de estudos com IA, desenvolvido utilizando tecnologias como Next.js, TypeScript, Scss, ContextAPI etc... ",
-    url: "url",
+    url: "https://studiapro.vercel.app/",
     urlcode: "https://github.com/pedroferreirasousa/Plataforma-de-Estudos-com-IA"
   }, {
     name: "AtlasMercantil",

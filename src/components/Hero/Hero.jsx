@@ -126,7 +126,7 @@ const Hero = () => {
         <div className="container-social-icons">
           <a target="__blank" className="icon" href="https://www.linkedin.com/in/pedrofsousa"><Image src={linkedin} alt="Ícone do LinkedIn com link para acesso à página" /></a>
           <a target="__blank" className="icon" href="https://github.com/pedroferreirasousa"><Image src={github} alt="Ícone do GitHub com link para acesso à página" /></a>
-          <a className="icon" href="https://drive.google.com/uc?id=1frPnCWhMv-os47mqfGQ5VDk-14AbHtKK&export=download"><Image src={cv} alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a>
+          <a target="__blank" className="icon" href="https://drive.google.com/uc?id=1frPnCWhMv-os47mqfGQ5VDk-14AbHtKK&export=download"><Image src={cv} alt="Ícone de currículo com link para acesso ao currículo em PDF" /></a>
           <a target="__blank" className="icon" href="https://api.whatsapp.com/send?phone=5534992981863&text=Olá%20Pedro%20👋%0AVi%20seu%20portfólio%20e%20estou%20entrando%20em%20contato..."><Image src={whatsapp} alt="Ícone de contato para whatsapp" /></a>
         </div>
       </div>

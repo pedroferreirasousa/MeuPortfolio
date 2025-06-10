@@ -14,5 +14,16 @@ footer {
     p{
         width: 100vw;
         text-align: center;
+
+        a{
+            color: $secondary-color;
+            text-decoration: none;
+            transition: all 0.3s linear;
+
+            &:hover{
+                color: $primary-color;
+            }
+
+        }
     }
 }

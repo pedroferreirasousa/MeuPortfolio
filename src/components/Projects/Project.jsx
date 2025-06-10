@@ -13,7 +13,7 @@ const Projects = () => {
   const cards = [{
     name: "CECLE",
     image: cecle,
-    description: "Projeto feito para um Centro Espirita Kardecista de Uberlandia, feito utilizando Next.js, Typescript, Sass, Gsap...",
+    description: "Projeto da Donuts Tech, para um centro espirita kardecista de Uberlândia, feito utilizando Next.js, Typescript, Sass, Gsap...",
     url: "https://cecle.vercel.app",
   }, {
     name: "Studia",

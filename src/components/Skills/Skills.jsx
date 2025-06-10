@@ -23,13 +23,13 @@ const Skills = () => {
     const cards = [{
         name: "HTML5",
         image: html,
-        description: "HTML é a linguagem de marcação utilizada para criar páginas Web estáticas. É uma linguagem de marcação semântica, que permite definir elementos semânticos, como cabeçalhos, parágrafos, imagens, links, etc.",
+        description: "HTML é a linguagem de marcação utilizada para criar páginas Web estáticas. É uma linguagem de marcação semântica, que permite definir elementos, como cabeçalhos, parágrafos, imagens, links, etc.",
 
     },
     {
         name: "CSS3",
         image: css,
-        description: "CSS é uma linguagem de estilo de páginas Web. É usada para definir a aparência de elementos de uma página Web, como cores, fontes, espaçamento, posição, etc.",
+        description: "CSS é uma linguagem de estilo. É usada para definir a aparência de elementos de uma página Web, como cores, fontes, espaçamento, posição, etc.",
     },
     {
         name: "JavaScript",

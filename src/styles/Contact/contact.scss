@@ -14,7 +14,7 @@
 
     h2 {
         width: 90%;
-        padding-top: 48px;
+        line-height: 1.5;
         text-align: center;
         font-size: $title-hero;
         color: $secondary-color;
@@ -29,17 +29,18 @@
         color: $secondary-color;
         text-align: center;
         margin: 0 auto;
+        padding-bottom: 24px;
     }
 
     p {
         padding-top: 24px;
-        width: 90%;
+        width: 100%;
         max-width: 1200px;
         font-size: $font-size-secondary-text;
         color: $primary-color;
         text-align: center;
         margin: 0 auto;
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
 
@@ -66,14 +67,14 @@
             }
 
             .btns {
-                margin-top: 20px;
+                margin-top: 24px;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
             }
 
             .btn {
-                width: 180px;
+                width: 260px;
                 height: 35px;
                 background-color: $primary-color;
                 display: flex;
@@ -86,6 +87,7 @@
                 transition: all 0.3s linear;
                 font-weight: 700;
                 padding: 0px 16px;
+                margin-bottom: 8px;
 
                 &:hover {
                     scale: 0.98;

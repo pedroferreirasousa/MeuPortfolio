@@ -15,7 +15,7 @@ const Projects = () => {
     name: "InteractiPlay",
     image: InteractiPlay,
     description: "Projeto desenvolvido para InteractiPlay, Uma ladding page moderna e responsiva para uma plataforma inovadora de edição de vídeos. Foi utilizado tecnologias como React, Typescript, Sass, Gsap...",
-    url: "https://cecle.vercel.app",
+    url: "https://lp-interactiplay.vercel.app/",
   }, {
     name: "Studia",
     image: Studia,

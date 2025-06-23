@@ -5,15 +5,16 @@ import ProjectComponent from "./ProjectCard/Projectcard";
 import atlasMercantil from "../../../public/media/AtlasMercantil.png";
 import cecle from "../../../public/media/Cecle.png";
 import Studia from "../../../public/media/Studia.png";
+import InteractiPlay from "../../../public/media/InteractiPlay.png";
 
 
 
 const Projects = () => {
 
   const cards = [{
-    name: "CECLE",
-    image: cecle,
-    description: "Projeto da Donuts Tech, para um centro espirita kardecista de Uberlândia, feito utilizando Next.js, Typescript, Sass, Gsap...",
+    name: "InteractiPlay",
+    image: InteractiPlay,
+    description: "Projeto desenvolvido para InteractiPlay, Uma ladding page moderna e responsiva para uma plataforma inovadora de edição de vídeos. Foi utilizado tecnologias como React, Typescript, Sass, Gsap...",
     url: "https://cecle.vercel.app",
   }, {
     name: "Studia",
@@ -28,6 +29,12 @@ const Projects = () => {
     url: "https://pedroferreirasousa.github.io/AtlasMercantil-2.0/",
     urlcode: "https://github.com/pedroferreirasousa/AtlasMercantil-2.0"
   },
+  {
+    name: "CECLE",
+    image: cecle,
+    description: "Projeto da Donuts Tech, para um centro espirita kardecista de Uberlândia, feito utilizando Next.js, Typescript, Sass, Gsap...",
+    url: "https://cecle.vercel.app",
+  }
   ]
 
 

@@ -32,7 +32,7 @@ const Projects = () => {
   {
     name: "CECLE",
     image: cecle,
-    description: "Projeto da Donuts Tech, para um centro espirita kardecista de Uberlândia, feito utilizando Next.js, Typescript, Sass, Gsap...",
+    description: "Projeto em parceria com a Donuts Tech, para um centro espirita kardecista de Uberlândia, feito utilizando Next.js, Typescript, Sass, Gsap...",
     url: "https://cecle.vercel.app",
   }
   ]

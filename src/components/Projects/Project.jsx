@@ -54,7 +54,7 @@ const Projects = () => {
           />
         ))}
       </div>
-        <a className="linkGit" href="https://github.com/pedroferreirasousa?tab=repositories">Acessar repositórios do github</a>
+        <a target="__blank" className="linkGit" href="https://github.com/pedroferreirasousa?tab=repositories">Acessar repositórios do github</a>
     </section>
   )
 }

@@ -22,7 +22,7 @@ const Contact = () => {
                         <a className="btn btn-wpp" target="__blank" href="https://api.whatsapp.com/send?phone=5534992981863&text=Olá%20Pedro%20👋%0AVi%20seu%20portfólio%20e%20estou%20entrando%20em%20contato...">
                             WhatsApp <img src="/media/icons/whatsapp.svg" alt="WhatsApp" />
                         </a>
-                        <a className="btn btn-linkedin" target="__blank" href="#">
+                        <a className="btn btn-linkedin" target="__blank" href="https://www.linkedin.com/in/pedrofsousa/">
                             Linkedin <img src="/media/icons/linkedin.svg" alt="LinkedIn" />
                         </a>
                     </div>
